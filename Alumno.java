@@ -6,14 +6,18 @@ public class Alumno {
     private String numeroMatricula;
     // la edad del alumno
     private int edad;
+ 
 
     /**
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        nombre = nombreCompleto;
+       
+       nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        if (nombre.length() < 3 ) {System.out.println("Se produjo un error"); }
+        if (numeroMatricula.length() < 4 ) {System.out.println("Se produjo un error"); }
     }
 
     /**
@@ -42,6 +46,9 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
-        return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
+        int length; 
+        return nombre.substring(0, 4) + numeroMatricula.substring(0, 5);
     }
+    
+
 }
