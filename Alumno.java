@@ -29,16 +29,12 @@ public class Alumno {
         return nombre;
     }
     
-    /**
-     * Devuelve el nombre completo del alumno
-     */
+    
     public String getMatricula() {
         return numeroMatricula;
     }
     
-    /**
-     * Devuelve el nombre completo del alumno
-     */
+    
     public int getEdad() {
         return edad;
     }

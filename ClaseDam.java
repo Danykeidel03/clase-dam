@@ -81,7 +81,7 @@ public class ClaseDam {
         System.out.println("Alumnos:");
         System.out.println();
         for(Alumno alumno : alumnos) {
-           System.out.println(cuenta + ". " + alumno.getNombre() + " " + alumno.getMatricula() + " " + alumno.getEdad());
+           System.out.println(cuenta + ". " + alumno.getNombre() + " " + "(" + alumno.getMatricula()+ ")" + " " + alumno.getEdad() + "años");
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
     }
