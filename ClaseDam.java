@@ -17,6 +17,7 @@ public class ClaseDam {
         centro = "desconocido";
         alumnos = new ArrayList<Alumno>();
         capacidad = maximoNumeroALumnos;
+        
     }
 
     /**
@@ -69,6 +70,18 @@ public class ClaseDam {
         System.out.println();
         for(Alumno alumno : alumnos) {
             alumno.imprimeDetalles();
+        }
+        System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
+    }
+    
+    public void imprimirListaNumeradaDeAlumnos() {
+        int cuenta = 1;
+       System.out.println("Centro " + centro);
+        System.out.println("Tutor: " + tutor + "   Aula: " + aula);
+        System.out.println("Alumnos:");
+        System.out.println();
+        for(Alumno alumno : alumnos) {
+           System.out.println(cuenta + ". " + alumno.getNombre() + " " + alumno.getMatricula() + " " + alumno.getEdad());
         }
         System.out.println("Numero de alumnos: " + getNumeroDeAlumnos());
     }
